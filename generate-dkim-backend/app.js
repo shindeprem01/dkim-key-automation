@@ -6,14 +6,14 @@ import cors from "cors"
 const app = express();
 const PORT = process.env.PORT || 5000;
 
-// Middlewares
+// middlewares
 app.use(bodyParser.json());
 
 app.use(cors({
   origin: "http://localhost:5173" 
 }));
 
-// Routes
+// routes
 app.use("/api/dkim", dkimRoutes);
 
 app.listen(PORT, () => {
