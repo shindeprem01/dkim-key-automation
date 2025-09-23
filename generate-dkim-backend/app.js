@@ -10,7 +10,6 @@ const PORT = process.env.PORT || 5000;
 app.use(bodyParser.json());
 
 app.use(cors({
-  // origin: "https://dkim-key-automation-iz31-git-main-pss-projects-7ffb7410.vercel.app" 
   origin: "http://localhost:5173" 
 }));
 
